@@ -23,16 +23,16 @@
         <div class="collapse navbar-collapse" id="mynavbar">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#iFhone" data-bs-toggle="tooltip" title="pretty much the same as the previous 13, but you buy it anyways">iFhone</a>
+              <a class="nav-link" href="#iFhone" data-bs-toggle="tooltip" data-bs-placement="bottom" title="pretty much the same as the previous 13, but you buy it anyways">iFhone</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#new" data-bs-toggle="tooltip" title="none">New Features</a>
+              <a class="nav-link" href="#new" data-bs-toggle="tooltip" data-bs-placement="bottom" title="none">New Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#why" data-bs-toggle="tooltip" title="better than apple 100%">Why Pear?</a>
+              <a class="nav-link" href="#why" data-bs-toggle="tooltip" data-bs-placement="bottom" title="better than apple 100%">Why Pear?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact" data-bs-toggle="tooltip" title="sign up to receive pear updates!">Contact</a>
+              <a class="nav-link" href="#contact" data-bs-toggle="tooltip" data-bs-placement="bottom" title="sign up to receive pear updates!">Contact</a>
             </li>
           </ul>
 
@@ -63,24 +63,46 @@
       </div>
     </div>
 
-    <div style="background-image: url(images/longpear.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center" class="container-fluid text-center p-5" id="iFhone">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <h1 class="display-1 p-5 text-secondary" style="font-size:20vh">iFhone 14</h1>
-      <h5 class="display-5"><a href="https://www.youtube.com/watch?v=xfr64zoBTAQ" target="_blank">> Buy now <</a></h5>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+    <div id="pearousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#pearousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#pearousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#pearousel" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval = "6000">
+          <img src="images/happycustomers.jpg" alt="Satisfied Customers" class="d-block w-100">
+          <div class="carousel-caption">
+            <h1 class="display-1 p-5">The all new iFhone 14.</h1>
+            <h5 class="display-5"><a href="https://www.youtube.com/watch?v=xfr64zoBTAQ" target="_blank">> Buy now <</a></h5>
+            <br>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval = "6000">
+          <img src="images/happyworkers.jpg" alt="Contented Workers" class="d-block w-100">
+          <div class="carousel-caption">
+            <h1 class="display-1 p-5">Innovative work strategies.</h1>
+            <h5 class="display-5"><a href="https://www.youtube.com/watch?v=xfr64zoBTAQ" target="_blank">> Join now <</a></h5>
+            <br>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval = "6000">
+          <img src="images/happyinvestors.jpg" alt="Happy Investors" class="d-block w-100">
+          <div class="carousel-caption">
+            <h1 class="display-1 p-5">Expansive industry growth.</h1>
+            <h5 class="display-5"><a href="https://www.youtube.com/watch?v=xfr64zoBTAQ" target="_blank">> Invest now <</a></h5>
+            <br>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#pearousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#pearousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
 
     <div class="container-fluid text-center p-5" id="new">
