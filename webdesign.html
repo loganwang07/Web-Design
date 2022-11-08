@@ -119,15 +119,17 @@
 
     <div class="container-fluid bg-dark text-light p-5" id="contact">
       <h2>Sign up to receive emails for Pear updates:</h2>
-      <form>
+
+      <form action="/action_page.php" class="was-validated">
         <div class="mb-3 mt-3">
-          <label for="email">Email:</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          <label for="email" class="form-label">Email:</label>
+          <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required>
+          <div class="invalid-feedback">Please fill out this field.</div>
         </div>
         <div class="form-check mb-3">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" name="remember">I agree to Pear's terms and services.
-          </label>
+          <input class="form-check-input" type="checkbox" id="myCheck" required>
+          <label class="form-check-label" for="myCheck">I agree to Pear's terms and services.</label>
+          <div class="invalid-feedback">Check this checkbox to continue.</div>
         </div>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signup">Submit</button>
       </form>
